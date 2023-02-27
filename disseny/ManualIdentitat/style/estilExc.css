@@ -1,0 +1,9 @@
+.row {
+    height: 100vh;
+}
+
+.col1 {
+    background-color: #D3D3D3;
+    border-radius: 20px;
+    height: 50%;
+}

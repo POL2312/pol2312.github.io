@@ -1,0 +1,125 @@
+/* Definició dels colors */
+:root {
+    --color-primary: #000080;
+    --color-secondary: #003366;
+    --color-highlight: #CCCCFF;
+    --color-action: #D3D3D3;
+    --color-alert: #c8d9e8;
+    --color-text: #000000;
+}
+
+/* Definició de les tipografies */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estil per a les capçaleres */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Georgia', serif;
+}
+
+/* Estil per als enllaços */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+/* Estil per als botons */
+.btn {
+    background-color: var(--color-action);
+    color: var(--color-text);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Estil per a les seccions */
+.section {
+    height: 100vh;
+    /* 100% of the viewport height */
+}
+
+#inicial {
+    background-image: url('../img/fondoUp.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about {
+    background-color: #00336657;
+    /* replace with actual path to your image */
+    background-size: cover;
+    /* scale the image to cover the entire section */
+    background-position: center;
+    /* center the image */
+}
+
+#projects, #maquetacio, #usabilUE, #psico, #color {
+    background-color: #00008078;
+    /* replace with actual path to your image */
+    background-size: cover;
+    background-position: center;
+}
+
+#contact {
+    background-color: #CCCCFF;
+    /* replace with your desired background color */
+}
+
+#topBtn {
+    display: block;
+    /* amaga el botó inicialment */
+    position: fixed;
+    /* fixa la posició del botó */
+    bottom: 20px;
+    /* distància des de la part inferior de la pantalla */
+    right: 30px;
+    /* distància des de la part dreta de la pantalla */
+    z-index: 99;
+    /* posa el botó per sobre de la resta de elements de la pàgina */
+    border: none;
+    /* treu la vora del botó */
+    outline: none;
+    /* treu l'ombra del botó en clicar-lo */
+    background-color: #003366;
+    /* color de fons del botó */
+    color: white;
+    /* color del text del botó */
+    cursor: pointer;
+    /* cursor del ratolí canvia a mà quan passa per sobre del botó */
+    padding: 15px;
+    /* espai interior del botó */
+    border-radius: 50%;
+    /* fa que el botó sigui rodó */
+    width: 50px;
+    height: 50px;
+}
+
+#slideBtn {
+
+    z-index: 99;
+    /* posa el botó per sobre de la resta de elements de la pàgina */
+    border: none;
+    /* treu la vora del botó */
+    background-color: #003366;
+    /* color de fons del botó */
+    color: white;
+    /* color del text del botó */
+    cursor: pointer;
+    /* cursor del ratolí canvia a mà quan passa per sobre del botó */
+    padding: 15px;
+    /* espai interior del botó */
+    border-radius: 50%;
+    /* fa que el botó sigui rodó */
+    width: 50px;
+    height: 50px;
+}
