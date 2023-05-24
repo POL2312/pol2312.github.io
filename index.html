@@ -1,15 +1,442 @@
 <!DOCTYPE html>
-<html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoli Personal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Georgia:400,400i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-<h1>Practiques Pol</h1>
-  
-<h4>Practica de prova</h4>
-<script async src="//jsfiddle.net/POL231202/wk5e81Lx/48/embed/"></script>
-<p>---------------------------------------------------------------------</p>
-<h4>Practica dades simples</h4>
-<script async src="//jsfiddle.net/POL231202/hc70yk3s/31/embed/"></script><br/><br/>
-<script async src="//jsfiddle.net/POL231202/ug9v2tc5/30/embed/"></script>
-<p>---------------------------------------------------------------------</p>
- 
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="#video">
+                POL MULET
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegació">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projectes">Projectes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacte">Contacte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/POL2312" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/pol-mulet-grange-457667238/"
+                            target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="video">
+        <div class="fullscreen-section">
+            <video id="miVideo" controls>
+                <source src="./imatges/Comp.mp4" type="video/mp4">
+                El teu navegador no suporta l'element de vídeo.
+            </video>
+
+            <div id="opcions" class="overlay">
+                <button class="btn btn-primary btn-icon" onclick="saltar(16)"><i class="fas fa-user"></i> Sobre
+                    mi</button>
+                <button class="btn btn-primary btn-icon" onclick="saltar(31)"><i class="fas fa-project-diagram"></i>
+                    Projectes</button>
+            </div>
+
+            <div id="projectesVideo" class="overlay">
+                <button class="btn btn-primary btn-icon" onclick="saltar(46)"><i class="fas fa-code-branch"></i>
+                    Projecte 1</button>
+                <button class="btn btn-primary btn-icon" onclick="saltar(65)"><i class="fas fa-code-branch"></i>
+                    Projecte 2</button>
+            </div>
+
+            <div id="final" class="overlay-small">
+                <button class="btn btn-primary btn-icon" onclick="saltar(83)"><i class="fas fa-flag-checkered"></i>
+                    Veure conclusió</button>
+                <button class="btn btn-primary btn-icon" onclick="saltar(40)"><i class="fas fa-arrow-left"></i> Tornar
+                    als Projectes</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="sobre-mi" class="fullscreen-section my-5">
+        <div class="container mt-5">
+            <h2 class="mb-4" data-aos="fade-down">Sobre mi</h2>
+            <div class="row">
+                <div class="col-md-7" data-aos="fade-right">
+                    <p>Hola! Sóc en Pol Mulet, un desenvolupador d'aplicacions web amb una passió incommensurable per
+                        la tecnologia i la
+                        creació de solucions innovadores. Des dels meus inicis en el món de la programació, m'he dedicat
+                        a desenvolupar
+                        aplicacions web sempre compromès a proporcionar el màxim valor i
+                        qualitat als meus clients.
+                    </p>
+
+                    <p> Els meus coneixements en llenguatges com Java, JavaScript, PHP, HTML i CSS, així com en l'ús de
+                        llibreries i frameworks com
+                        Vue i Laravel, em permeten crear solucions web a mida per a cada projecte. La meva metodologia
+                        de treball es basa en
+                        una comunicació constant amb els clients i en la comprensió profunda de les seves necessitats i
+                        expectatives, fet que em permet
+                        desenvolupar solucions personalitzades que s'adaptin perfectament als seus requeriments.
+                    </p>
+
+                    <p> En aquesta secció, et convido a explorar alguns dels meus treballs i projectes que he anat
+                        realitzant al llarg del temps.
+                        Si estàs interessat en saber més sobre mi, o si vols treballar amb mi en el teu pròxim projecte,
+                        no dubtis a posar-te en contacte.
+                    </p>
+
+                    <a target="_blank" href="Curriculum_Pol.pdf" class="btn btn-call-to-action"
+                        download="Curriculum_Pol.pdf">Descarregar CV</a>
+                </div>
+                <div class="col-md-5" data-aos="fade-left">
+                    <img style="width: auto; height: 80%;" src="./imatges/fotos-removebg-preview.png"
+                        alt="Foto de Pol Mulet Grange">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projectes" class="my-5 fullscreen-section">
+        <div class="container">
+            <h2 class="mb-4" data-aos="fade-down">Projectes</h2>
+            <p class="mb-3" data-aos="zoom-in-up">A continuació, et mostro alguns dels projectes en què he treballat.
+                Fes clic al
+                botó
+                per a més informació sobre cada projecte.</p>
+            <div class="row mt-3">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card">
+                        <img src="./imatges/echotel_0.png" class="card-img-top" alt="Imatge del ECHOTEL"
+                            data-aos="flip-up" data-aos-delay="500">
+                        <div class="card-body">
+                            <h5 class="card-title">ECHOTEL</h5>
+                            <p class="card-text">És un projecte de joc interactiu que he desenvolupat, enfocat
+                                en la sostenibilitat dins l'hostaleria.
+                                L'usuari és un cuiner que compra productes ecològics per al menú de l'hotel, pagant amb
+                                un pressupost de CO2 en lloc de diners.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#modalProjecte1">
+                                Més informació
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="card">
+                        <img src="./imatges/broggi112_0.png" class="card-img-top" alt="Imatge del BROGGI"
+                            data-aos="flip-up" data-aos-delay="1500">
+                        <div class="card-body mt-4">
+                            <h5 class="card-title">BROGGI 112</h5>
+                            <p class="card-text">És un projecte on he desenvolupat una aplicació web que simula el
+                                funcionament del servei d'emergències 112,
+                                des de la recepció de trucades fins a la gestió de les agències d'intervenció i l'arxiu
+                                dels expedients.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#modalProjecte2">
+                                Més informació
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="1500">
+                    <div class="card">
+                        <img style="width: 220px; height: 220px; margin-left: 20%;"
+                            src="./imatges/Interrogante-negro.webp" class="card-img-top mt-2" alt="Imatge de CAL JOAN"
+                            data-aos="flip-up" data-aos-delay="2200">
+                        <div class="card-body">
+                            <h5 class="card-title">CAL JOAN</h5>
+                            <p class="card-text">Aquest projecte consta de una aplicació web per un restaurant, els
+                                clients l'hauran de fer servir
+                                per poder fer la comanda, hauran de triar els primers, segons, i postres. Aviat
+                                disponible...
+                            </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#modalProjecte3" disabled>
+                                Aviat més informació
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Projecte 1 -->
+            <div class="modal fade" id="modalProjecte1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div style="max-width: 700px;" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">ECHOTEL</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Carousel comença aquí -->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imatges/echotel_1.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imatges/echotel_2.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imatges/echotel_3.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imatges/echotel_4.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev carousel-control-custom"
+                                    href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next carousel-control-custom"
+                                    href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span class="sr-only">Següent</span>
+                                </a>
+                            </div>
+                            <!-- Carousel acaba aquí -->
+                            <p class="mt-3">ECHOTEL és un projecte en el qual he treballat intensament. En essència, es
+                                tracta d'un
+                                joc interactiu en 2D programat principalment amb JavaScript, HTML i CSS. L'objectiu és
+                                sensibilitzar sobre la sostenibilitat en l'hostaleria. En aquest joc, l'usuari assumeix
+                                el rol de cuiner de l'hotel i es dedica a comprar productes per al menú. El detall que
+                                marca la diferència és que les transaccions no es realitzen amb diners, sinó amb un
+                                pressupost de CO2. Així, l'usuari ha de triar amb cura quins productes comprar, ja que
+                                ha de buscar els més sostenibles i que generin menys emissions. Aquest projecte ofereix
+                                una visió diferent sobre com les decisions diàries poden tenir un impacte significatiu
+                                en la sostenibilitat del nostre planeta.</p>
+                            <p><strong>Llenguatges i tecnologies utilitzades:</strong> HTML, CSS, JavaScript.</p>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <a href="" target="_blank" class="btn btn-primary">Veure a
+                                GitHub</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal Projecte 2 -->
+            <div class="modal fade" id="modalProjecte2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+                aria-hidden="true">
+                <div style="max-width: 700px;" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel1">BROGGI 112</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Carousel comença aquí -->
+                            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imatges/broggi112_0.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imatges/broggi112_1.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imatges/broggi112_2.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imatges/broggi112_3.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imatges/broggi112_4.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev carousel-control-custom"
+                                    href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next carousel-control-custom"
+                                    href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span class="sr-only">Següent</span>
+                                </a>
+
+                            </div>
+                            <!-- Carousel acaba aquí -->
+                            <p class="mt-3">BROGGI 112 és un projecte ambiciós on he desenvolupat una aplicació web
+                                complexa que imita de manera realista el funcionament del servei d'emergències 112. El
+                                sistema inicia amb la recepció d'una trucada d'emergència, en la qual es recullen les
+                                dades necessàries i es tipifica la situació d'emergència. A continuació, la ubicació de
+                                l'emergència es marca en un mapa interactiu, i es seleccionen les agències que han
+                                d'intervenir, també localitzades en el mapa.</p>
+
+                            <p>Aquest projecte no només incorpora la gestió de trucades, sinó que també s'encarrega del
+                                seguiment de l'estat de cada agència que intervé en una situació d'emergència. A més,
+                                inclou una funcionalitat per a la gestió dels expedients, permetent el seguiment complet
+                                d'una emergència des de la seva recepció fins al tancament del cas.</p>
+
+                            <p>BROGGI 112 va ser desenvolupat per encàrrec d'un institut de grau mitjà amb l'objectiu
+                                d'oferir una eina pràctica per aprendre el funcionament d'un software similar al del
+                                servei d'emergències 112.</p>
+
+                            <p><strong>Llenguatges i tecnologies utilitzades:</strong> HTML, CSS, JavaScript, PHP,
+                                Laravel, Eloquent i Vue.</p>
+
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <a href="" target="_blank" class="btn btn-primary">Veure a
+                                GitHub</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Projecte 3 -->
+            <!-- <div class="modal fade" id="modalProjecte3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2"
+                aria-hidden="true">
+                <div style="max-width: 700px;" class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel2">CAL JOAN</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            Carousel comença aquí 
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev carousel-control-custom"
+                                    href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next carousel-control-custom"
+                                    href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span class="sr-only">Següent</span>
+                                </a>
+                            </div>
+                            Carousel acaba aquí 
+                            <p class="mt-3">Info del projecte
+                            </p>
+                            <p><strong>Llenguatges i tecnologies utilitzades:</strong> Llenguatge</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="" target="_blank" class="btn btn-primary">Veure a
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+    <section id="contacte" class=" my-5 fullscreen-section">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4" data-aos="zoom-in-up">
+                    <div class="contact-content text-center">
+                        <h2 class="mb-4">Contacte</h2>
+                        <p><strong>Email:</strong> <a href="mailto:infopolmulet@gmail.com">infopolmulet@gmail.com</a></p>
+                        <p><strong>Telèfon:</strong> <a href="tel:656540562">656 54 05 62</a></p>
+                        <p><strong>Localització:</strong> <a target="_blank"
+                                href="https://www.google.com/maps?q=Barcelona">Barcelona</a></p>
+                        <div class="social-media">
+                            <p><strong>Troba'm a les xarxes:</strong></p>
+                            <div class="social-icons d-flex justify-content-center">
+                                <a href="https://github.com/POL2312" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/pol-mulet-grange-457667238/" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./imatges/logo.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8" data-aos="zoom-in-up">
+                    <div class="map text-center">
+                        <a href="https://www.google.com/maps?q=Barcelona" target="_blank">
+                            <img src="./imatges/mapa.PNG" alt="Mapa de Barcelona" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-secondary text-white text-center py-3 ">
+        <p class="m-0">&copy; 2023 Portfoli Personal | Pàgina creada per Pol Mulet</p>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 2500 });
+    </script>
+
+    <script src="scripts.js"></script>
+
 </body>
+
 </html>
