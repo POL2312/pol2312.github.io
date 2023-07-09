@@ -1,5 +1,68 @@
-<div id="miFormulario">
-        <h2 style="text-align: center; color: #333;">Calculadora de Lotes</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Lotes</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #miFormulario {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            color: #555;
+            margin-top: 10px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+        }
+
+        input:focus {
+            border-color: #007BFF;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .result, .sl {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div id="miFormulario">
+        <h2>Calculadora de Lotes</h2>
 
         <form id="formulario">
             <label for="input1">% SL:</label><br>
@@ -13,13 +76,33 @@
 
             <label for="input3">USD SL:</label><br>
             <input type="number" id="input3" name="input3" value="70"><br>
-
         </form>
 
-        
         <p id="resultado1" class="result"></p>
         <p id="sl" class="sl"></p>
         <p id="tp" class="result"></p>
         <p id="lote" class="result"></p>
-        
     </div>
+
+    <script>
+    document.getElementById('formulario').addEventListener('input', function(event) {
+        var porcentaje1 = document.getElementById('input1').value;
+        var porcentaje2 = document.getElementById('input2').value;
+        var valorPorDefecto = document.getElementById('input3').value;
+        var lotepetit = document.getElementById('input4').value;
+
+        // Calcula el resultado
+        var resultado = porcentaje1 * 30;
+        var resultado1 = valorPorDefecto / (resultado / 100);
+        var lote = resultado1 / (100) / lotepetit;
+        var tp = porcentaje2 * 30 * resultado1 / 100;
+
+        // Muestra el resultado con dos decimales
+        document.getElementById('resultado1').textContent = "MARGIN: " + resultado1.toFixed(2);
+        document.getElementById('lote').textContent = "LOTE: " + lote.toFixed(2);
+        document.getElementById('sl').textContent = "SL " + valorPorDefecto;
+        document.getElementById('tp').textContent = "TP " + tp.toFixed(2);
+    });
+    </script>
+</body>
+</html>
