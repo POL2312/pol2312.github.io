@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Título de tu página</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<div id="container">
+  <div id="input-area">
+    <form id="customer-form">
+      <h2>Información del cliente</h2>
+      <input type="text" id="customer-name" placeholder="Nombre del cliente" oninput="updateCustomerInfo()">
+      <input type="text" id="customer-phone" placeholder="Teléfono del cliente" oninput="updateCustomerInfo()">
+    </form>
+    <form id="product-form">
+      <h2>Añadir producto</h2>
+      <select id="product-type" onchange="productTypeChange()">
+        <option value="">-- Seleccionar tipo de producto --</option>
+        <option value="generico">Genérico</option>
+        <option value="pastel">Pastel</option>
+      </select>
+      <br>
+      <div id="product-details"></div>
+    </form>
+  </div>
+  <div id="ticket">
+    <h2>Pastisseria Vives</h2>
+    <p>Carrer Ramon Turró Nº1</p>
+    <p>08380 Malgrat de Mar</p>
+    <p>937 65 49 59</p>
+    <hr>
+    <div id="ticket-customer">
+      <h3>Información del cliente</h3>
+      <hr>
+    </div>
+    <div id="ticket-items">
+      <h3>Productos</h3>
+      <hr>
+    </div>
+    <button id="print-btn">Imprimir</button>
+  </div>
+</div>
+</body>
+</html>
