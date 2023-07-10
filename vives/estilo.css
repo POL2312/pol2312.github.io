@@ -1,0 +1,146 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  background: linear-gradient(45deg, #83a4d4, #b6fbff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #333333;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5em;
+  padding: 20px 0;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+#product-description {
+  width: 100%;
+  height: 120px;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+}
+
+#product-description::placeholder {
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1200px;
+  transition: box-shadow 0.5s ease;
+}
+
+#container:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#input-area,
+#ticket {
+  flex-basis: 45%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+input,
+select,
+button {
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-size: 1em;
+}
+
+button {
+  background-color: #ddd;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  margin: 1em auto;
+}
+
+#print-btn {
+  border: none;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+#ticket {
+    border-left: 1px solid #cccccc;
+    padding-left: 2em;
+    text-align: center;
+}
+
+#ticket-customer h3,
+#ticket-items h3 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+#ticket-items p {
+  font-size: 1em;
+  background: none;
+  padding: 10px 0;
+  margin-bottom: 5px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
+
+.remove-product {
+  color: red;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.remove-product:hover {
+  text-decoration: underline;
+}
