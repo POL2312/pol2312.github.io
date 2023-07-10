@@ -2,17 +2,28 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Título de tu página</title>
+  <title>Pastisseria Vives</title>
   <link rel="stylesheet" type="text/css" href="estilo.css">
-  <script src="script.js"></script>
 </head>
 <body>
 <div id="container">
   <div id="input-area">
+    <form id="employee-form">
+      <h2>Información del empleado</h2>
+      <select id="employee-name" onchange="updateEmployeeInfo()">
+        <option value="">-- Selecciona un empleado --</option>
+        <option value="Jessica">Jessica</option>
+        <option value="Anna X">Anna X</option>
+        <option value="Anna J">Anna J</option>
+        <option value="Sonia">Sonia</option>
+        <option value="XXXXX">XXXXX</option>
+      </select>
+    </form>
     <form id="customer-form">
       <h2>Información del cliente</h2>
       <input type="text" id="customer-name" placeholder="Nombre del cliente" oninput="updateCustomerInfo()">
       <input type="text" id="customer-phone" placeholder="Teléfono del cliente" oninput="updateCustomerInfo()">
+      <input type="datetime-local" id="customer-pickup" oninput="updateCustomerInfo()">
     </form>
     <form id="product-form">
       <h2>Añadir producto</h2>
@@ -32,15 +43,15 @@
     <p>937 65 49 59</p>
     <hr>
     <div id="ticket-customer">
-      <h3>Información del cliente</h3>
       <hr>
     </div>
     <div id="ticket-items">
-      <h3>Productos</h3>
       <hr>
     </div>
     <button id="print-btn">Imprimir</button>
+    <p>MOLTES GRACIES</p>
   </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
